@@ -7,7 +7,7 @@ let info = `
 *╰═┅ৡৢ͜͡✦═╡𝗦HADOW╞═┅ৡৢ͜͡✦═╯*
 `.trim() 
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 THE SHADOW BROKERS - BOT 🔥*', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 Milw0rM - BOT V3 🔥*', 'status@broadcast')
 }
 handler.command = /^(reglas|normas)$/i
 

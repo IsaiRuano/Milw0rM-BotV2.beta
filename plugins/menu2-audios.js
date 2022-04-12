@@ -15,11 +15,16 @@ let handler = async (m, { conn, usedPrefix }) => {
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let username = conn.getName(who)
     let str = `
-*_ミ💖 Hola ${username} 💖彡_*
+*_ミ�? Hola ${username} 💖彡_*
 
 *<MENU DE AUDIOS/>*
 - Escribe las palabras/frases tal como estan, no hace falta poner ningun prefijo (#, ., *, etc) 
 
+° ඬ⃟🔊 _Masivo_
+° ඬ⃟🔊 _Wtf_
+° ඬ⃟🔊 _Dime_
+° ඬ⃟🔊 _Basado_
+° ඬ⃟🔊 _La lechuza_
 ° ඬ⃟🔊 _Noche de paz_
 ° ඬ⃟🔊 _Buenos dias_
 ° ඬ⃟🔊 _Audio hentai_
@@ -58,7 +63,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ° ඬ⃟🔊 _:c_
 ° ඬ⃟🔊 _a_
 
-*_「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」_*`.trim()
+*_�? Milw0rM - BOT 」_*`.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
   }

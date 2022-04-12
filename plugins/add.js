@@ -1,39 +1,50 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
-  if (!text) throw! `*Ingrese un numero o corrobore que el numero ingresado este escrito correctamente y en formato internacional*\n*Ejemplo:*\n\n*${usedPrefix + command + ' ' + global.owner[0]}*`
-  let _participants = participants.map(user => user.jid)
-  let users = (await Promise.all(
-    text.split(',')
-      .map(v => v.replace(/[^0-9]/g, ''))
-      .filter(v => v.length > 4 && v.length < 20 && !_participants.includes(v + '@s.whatsapp.net'))
-      .map(async v => [
-        v,
-        await conn.isOnWhatsApp(v + '@s.whatsapp.net')
-      ])
-  )).filter(v => v[1]).map(v => v[0] + '@c.us')
-  let response = await conn.groupAdd(m.chat, users)
-  if (response[users] == 408) throw `*El numero se salio recientemente*\n*La unica manera de añadirlo es por medio del enlace del grupo. Usa ${usedPrefix}link para obtener el enlace*`
-  let pp = await conn.getProfilePicture(m.chat).catch(_ => false)
-  let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
-  for (let user of response.participants.filter(user => Object.values(user)[0].code == 403)) {
-    let [[jid, {
-      invite_code,
-      invite_code_exp
-    }]] = Object.entries(user)
-    let teks = `*No fue posible añadir a @${jid.split('@')[0]}*\n*Enviando invitacion a su privado...*`
-    m.reply(teks, null, {
-      contextInfo: {
-        mentionedJid: conn.parseMention(teks)
-      }
-    })
-    await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, 'Hey!! Hola, me presento, soy The Shadow Brokers - Bot, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!', jpegThumbnail ? {
-      jpegThumbnail
-    } : {})
-  }
+let handler = async (m, { conn, text, participants, usedPrefix }) => {
+  let users = text.split`,`.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v.length > 20)
+  conn.groupAdd(m.chat, users)
+
+	if(isNaN(text) && !text.match(/@/g)){}
+  else if(isNaN(text)) {
+		var number = text.split`@`[1]}
+  else if(!isNaN(text)) {
+		var number = text}
+	if(!text && !m.quoted) return conn.reply(m.chat, `*[❗] Agregue un número*\n\n*┯┷*\n*┠≽Ejemplo:*\n*┠*\n*┠≽ ${usedPrefix}añadir 5219996xxxxxx*\n*┷┯*`, m)
+	if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `*[ ⚠ ️] Número erróneo, ingrese un número correcto!*\n\n*Ejemplo de número: 48729750700*`, m)
+
+  try {
+	if(text) {
+		var user = number + '@s.whatsapp.net'
+	} else if(m.quoted.sender) {
+		var user = m.quoted.sender
+	} else if(m.mentionedJid) {
+		var user = number + '@s.whatsapp.net'
+	} 
+	let response = await conn.groupAdd(m.chat, users)
+	let pp = await conn.getProfilePicture(m.chat).catch(_ => false)
+	let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
+	for (let user of response.participants.filter(user => Object.values(user)[0].code == 403)) {
+	  let [[jid, {
+		invite_code,
+		invite_code_exp
+	  }]] = Object.entries(user)
+	  let teks = `*[❗] El número no puede ser agregado, puede deberse a que salio del grupo recientemente o que tenga puesto en privacidad que solo sus contactos lo puedan agregar*\n\n_Enviando invitación a @${jid.split('@')[0]}..._`
+	  m.reply(teks, null, {
+		contextInfo: {
+		  mentionedJid: conn.parseMention(teks)
+		}
+	  })
+	  await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, '_Hola 👋🏻, soy un The Shadow Brokers - Bot, un Bot de WhatsApp, un integrante de este grupo intento agregarte, pero no pudo :( es por ello que se te envia esta invitación para que puedas agregarte tu mism@._ *Únete, te esperamos!!*', jpegThumbnail ? {
+		jpegThumbnail
+	  } : {})
+	}
+} catch (e) {
+		} finally {
+			conn.groupAdd(m.chat, [user]).catch(console.log)
+	}	
 }
-handler.help = ['add', '+'].map(v => v + ' número')
-handler.tags = ['admin']
-handler.command = /^(add|agregar|añadir|\+)$/i
+handler.help = ['add', '+'].map(v => v + ' _número_')
+handler.tags = ['group']
+handler.command = /^(add|\+|añadir)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

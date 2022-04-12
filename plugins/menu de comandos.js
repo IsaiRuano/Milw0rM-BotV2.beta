@@ -15,20 +15,31 @@ let username = conn.getName(who)
 //let vn = './media/mariana.mp3'
 let menu =`
 ╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
-║═ *𝐓𝐡𝐞 𝐒𝐡𝐚𝐝𝐨𝐰 𝐁𝐫𝐨𝐤𝐞𝐫𝐬 - 𝐁𝐨𝐭*
+║═ *𝕸𝖎𝖑𝖜0𝖗𝕸᭄᭵👨🏼‍💻⃟⃢🔥*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *✨𝗛ola, ${username}!!*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *Creador del Bot: Bruno Sobrino* 
-║➤ *Numero del creador:* *wa.me/17722386341 (No Bot)*
-║➤ *PayPal:* *https://www.paypal.me/TheShadowBrokers133*
-║➤ *Numero del Bot oficial:* *wa.me/5219991402134*
-║➤ *Numero del Sub Bot oficial:* *wa.me/5219992095479*
+║➤ *🤴🏼‍Creador del Bot: BrunoSobrino🤴* 
+║➤ *👨🏼‍💻Creador/Editor: 𝕸𝖎𝖑𝖜0𝖗𝕸👨🏼‍💻*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-╰══╡✯✯✯✯✯✯✯✯╞══╯
+╰══〘 ✯✯✯✯✯✯✯✯ 〙═╯
+
+╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
+║═ *𝕸𝖎𝖑𝖜0𝖗𝕸᭄᭵👨🏼‍💻⃟⃢🔥*
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+║➤ *🤖𝕊𝕦𝕓 𝔹𝕠𝕥 𝕆𝕗𝕚𝕔𝕚𝕒𝕝🤖:*
+║➤ *wa.me/12368360652*
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+║➤ *𝕄𝕚𝕝𝕨𝕆𝕣𝕄 𝔹𝕠𝕥 𝕆𝕗𝕚𝕔𝕚𝕒𝕝🤖:*
+║➤ *wa.me/12364990370*
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+╰══〘 ✯✯✯✯✯✯✯✯ 〙═╯
+
 ┏━━━━━━━━━━━━━┓
 ┃ *<INFORMACIÓN|MENUS/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+┣ ඬ⃟ℹ️️ _${usedPrefix}DueñoDelBot_
+┣ ඬ⃟ℹ️️ _${usedPrefix}comandosowner_
 ┣ ඬ⃟ℹ️️ _${usedPrefix}sc_
 ┣ ඬ⃟ℹ️️ _${usedPrefix}donar_
 ┣ ඬ⃟ℹ️️ _${usedPrefix}infobot_
@@ -71,6 +82,7 @@ let menu =`
 ┃ *<NUMERO DEL CREADOR/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟👻 _${usedPrefix}owner_
+┣ ඬ⃟👻 _${usedPrefix}DueñoDelBot_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<JUEGOS/>*
@@ -288,33 +300,14 @@ let menu =`
 ┣ ඬ⃟📝️ _${usedPrefix}logosad *texto1|texto2*_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
-┃ *<PROPIETARO DEL BOT/>*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟👑 _${usedPrefix}boost_
-┣ ඬ⃟👑 _${usedPrefix}restart_
-┣ ඬ⃟👑 _${usedPrefix}banlist_
-┣ ඬ⃟👑 _${usedPrefix}virtext1_
-┣ ඬ⃟👑 _${usedPrefix}banchat2_
-┣ ඬ⃟👑 _${usedPrefix}actualizar_
-┣ ඬ⃟👑 _${usedPrefix}CajaFuerte_
-┣ ඬ⃟👑 _${usedPrefix}unbanchat2_
-┣ ඬ⃟👑 _${usedPrefix}bc *texto*_
-┣ ඬ⃟👑 _${usedPrefix}bcgc *texto*_
-┣ ඬ⃟👑 _${usedPrefix}bcbot *texto*_
-┣ ඬ⃟👑 _${usedPrefix}setbye *@tag*_
-┣ ඬ⃟👑 _${usedPrefix}banuser *@tag*_
-┣ ඬ⃟👑 _${usedPrefix}enable *public*_
-┣ ඬ⃟👑 _${usedPrefix}disable *public*_
-┣ ඬ⃟👑 _${usedPrefix}unbanuser *@tag*_
-┣ ඬ⃟👑 _${usedPrefix}listgroup *@tag*_
-┣ ඬ⃟👑 _${usedPrefix}enable *restrict*_
-┣ ඬ⃟👑 _${usedPrefix}enable *autoread*_
-┣ ඬ⃟👑 _${usedPrefix}setwelcome *@tag*_
-┣ ඬ⃟👑 _${usedPrefix}enable *autoread*_
-┣ ඬ⃟👑 _${usedPrefix}disable *autoread*_
-┗━━━━━━━━━━━━━┛`.trim()
+┃*<PAYPAL>*
+┣*https://www.paypal.me/MrTuTosRX*
+┗━━━━━━━━━━━━━┛
+╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
+║     𝕸𝖎𝖑𝖜0𝖗𝕸᭄᭵👨🏼‍💻⃟⃢🔥    ║
+╰══〘 ✯✯✯✯✯✯✯✯ 〙═╯`.trim()
 let mentionedJid = [who]
-conn.send3ButtonImg(m.chat, pp, menu, '©The Shadow Brokers - Bot', '𝙼𝙴𝙽𝚄 𝚂𝙸𝙼𝙿𝙻𝙴', `#menusimple`, '𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂', `#menuaudios`, '𝙶𝚁𝚄𝙿𝙾𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂', `#grupos`, m, false, { contextInfo: { mentionedJid }})   
+conn.send3ButtonImg(m.chat, pp, menu, '©Milw0rM - Bot', '𝙼𝙴𝙽𝚄 𝚂𝙸𝙼𝙿𝙻𝙴', `#menusimple`, '𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂', `#menuaudios`, '𝙶𝚁𝚄𝙿𝙾𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂', `#grupos`, m, false, { contextInfo: { mentionedJid }})   
 //await await await await await await conn.sendFile(m.chat, vn, 'mariana.mp3', null, m, true, {
 //type: 'audioMessage', 
 //ptt: true 
