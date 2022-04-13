@@ -22,8 +22,8 @@
 > apt install nodejs -y
 > apt install ffmpeg -y
 > apt install imagemagick -y
-> git clone https://github.com/BrunoSobrino/ShadowBotV3
-> cd ShadowBotV3
+> git clone https://github.com/IsaiRuano/Milw0rM-BotV2.beta
+> cd Milw0rM-BotV2 (sino te funciona prueba) (cd Milw0rM-BotV2.beta)
 > npm install
 > npm install -g npm@8.5.0
 > npm update
@@ -39,8 +39,8 @@
 > apt install imagemagick -y
 > termux-setup-storage
 > cd storage/downloads
-> git clone https://github.com/BrunoSobrino/ShadowBotV3
-> cd ShadowBotV3
+> git clone https://github.com/IsaiRuano/Milw0rM-BotV2.beta
+> cd Milw0rM-BotV2 (sino te funciona prueba) (cd Milw0rM-BotV2.beta
 > npm install
 > npm install -g npm@8.5.0
 > npm update
@@ -71,7 +71,7 @@ fue en via GitHub solo debera escribir:
 
 > Si el termux se cierra para volver activar si la instlacion 
 fue en via archivos solo debera escribir:
-> cd storage/downloads/ShadowBotV3
+> cd storage/downloads/Milw0rM-BotV2
 > npm start
 
 > cada vez que realices una modificacion en el
@@ -85,7 +85,7 @@ de esa cantidad el Bot empieza a ir
 excesivamente lento (depende del WhatsApp igual)
 ```
 ## `EDITOR Y PORPIETARIO DEL BOT` 
-[![BrunoSobrino](https://avatars.githubusercontent.com/u/90165013?s=400&u=946f5c00c527c7e6fa2ef5148c6ad56270bb600e&v=4size=100)](https://avatars.githubusercontent.com/u/90165013?s=400&u=cdf7fd989e2a787c9f400545147865615c336002&v=4) 
+[![IsaiRuano](https://avatars.githubusercontent.com/u/90165013?s=400&u=946f5c00c527c7e6fa2ef5148c6ad56270bb600e&v=4size=100)](https://avatars.githubusercontent.com/u/90165013?s=400&u=cdf7fd989e2a787c9f400545147865615c336002&v=4) 
 ```bash
-`The Shadow Brokers - Bot ___ By Bruno Sobrino` 
+`Milw0rM - Bot ___ By Bruno Sobrino,IsaiRuano` 
 ```
