@@ -86,7 +86,6 @@ de esa cantidad el Bot empieza a ir
 excesivamente lento (depende del WhatsApp igual)
 ```
 ## `EDITOR Y PORPIETARIO DEL BOT` 
-[![IsaiRuano]!]
 [![20220413-122949.jpg](https://i.postimg.cc/G2x7JwBF/20220413-122949.jpg)](https://postimg.cc/G89xdfxt) 
 ```bash
 `Milw0rM - Bot ___ By Bruno Sobrino,IsaiRuano` 
